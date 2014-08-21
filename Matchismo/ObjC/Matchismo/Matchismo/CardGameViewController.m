@@ -7,6 +7,8 @@
 //
 
 #import "CardGameViewController.h"
+#import "Deck.h"
+#import "PlayingCardDeck.h"
 
 @interface CardGameViewController ()
 
@@ -16,10 +18,18 @@
 
 @property (nonatomic) int flipCount;
 
+@property (nonatomic) Deck *deck;
+
 @end
 
 @implementation CardGameViewController
 
+- (Deck *)deck {
+    if (!_deck)
+        _deck = [[PlayingCardDeck alloc] init];
+    
+    return _deck;
+}
 
 - (void)setFlipCount:(int)flipCount {
     _flipCount = flipCount;
@@ -37,10 +47,16 @@
         [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
                           forState:UIControlStateNormal];
         [sender setTitle:@"" forState:UIControlStateNormal];
-    } else{
+    } else {
+        Card *randomCard = [self.deck drawRandomCard];
+        if (!randomCard) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No cards left in the deck!" message:@"No cards left in the deck!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+            return;
+        }
         [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
                           forState:UIControlStateNormal];
-        [sender setTitle:@"A♣︎" forState:UIControlStateNormal];
+        [sender setTitle:[randomCard contents] forState:UIControlStateNormal];
     }
     self.flipCount++;
 }
