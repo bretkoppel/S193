@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matchismo", "Matchismo.csproj", "{EAB538C7-1AFA-404C-A7E1-43A66BB47407}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{DD60BE46-4772-4F3B-89BD-04F35136DECD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD60BE46-4772-4F3B-89BD-04F35136DECD}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{DD60BE46-4772-4F3B-89BD-04F35136DECD}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{DD60BE46-4772-4F3B-89BD-04F35136DECD}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{DD60BE46-4772-4F3B-89BD-04F35136DECD}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{DD60BE46-4772-4F3B-89BD-04F35136DECD}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{DD60BE46-4772-4F3B-89BD-04F35136DECD}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{DD60BE46-4772-4F3B-89BD-04F35136DECD}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{DD60BE46-4772-4F3B-89BD-04F35136DECD}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{DD60BE46-4772-4F3B-89BD-04F35136DECD}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{DD60BE46-4772-4F3B-89BD-04F35136DECD}.Release|iPhone.Build.0 = Release|Any CPU
+		{DD60BE46-4772-4F3B-89BD-04F35136DECD}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{DD60BE46-4772-4F3B-89BD-04F35136DECD}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{EAB538C7-1AFA-404C-A7E1-43A66BB47407}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{EAB538C7-1AFA-404C-A7E1-43A66BB47407}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{EAB538C7-1AFA-404C-A7E1-43A66BB47407}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{EAB538C7-1AFA-404C-A7E1-43A66BB47407}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{EAB538C7-1AFA-404C-A7E1-43A66BB47407}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{EAB538C7-1AFA-404C-A7E1-43A66BB47407}.Debug|iPhone.Build.0 = Debug|iPhone
+		{EAB538C7-1AFA-404C-A7E1-43A66BB47407}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{EAB538C7-1AFA-404C-A7E1-43A66BB47407}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{EAB538C7-1AFA-404C-A7E1-43A66BB47407}.Release|iPhone.ActiveCfg = Release|iPhone
+		{EAB538C7-1AFA-404C-A7E1-43A66BB47407}.Release|iPhone.Build.0 = Release|iPhone
+		{EAB538C7-1AFA-404C-A7E1-43A66BB47407}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{EAB538C7-1AFA-404C-A7E1-43A66BB47407}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Matchismo.csproj
+	EndGlobalSection
+EndGlobal
